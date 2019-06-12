@@ -1,10 +1,36 @@
 <!doctype html>
 <html lang=en>
   <head>
-    <link rel="stylesheet" href="./main.css" type="text/css">
     <meta charset=utf-8>
+    <link rel="stylesheet" href="./main.css" type="text/css">
     <title>Help me choose</title>
-  </head>
+    </head>
+  <body id="body-control">
+      <h1 id="rubrik">Help me choose between...</h1>
+
+      <div class="inputSection">
+        <img src="choc.png" height="250" width="200">
+        <div class="inputs">
+          <input placeholder="Something" ></input>
+        </div>
+        <button class="addOption">Add</button>
+      </div>
+      <div class="resultSection"></div>
+ <button>Go!</button>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script>
+ $(function() {
+   $('.resultSection').hide()
+      var add_option = function(){
+        $('.inputs').append('<input></input>')
+      }
+      $('.addOption').click(add_option)
+});
+
+
+
+</script>
 
   <body>
     <h1>help me choose between...</h1>
@@ -17,4 +43,5 @@
 </div>
 <button>Go!</button>
   </body>
+</body>
 </html>

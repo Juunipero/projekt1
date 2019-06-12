@@ -6,9 +6,9 @@ body {
   margin-top: 150px;
 
     background: linear-gradient(to right, #b2d3be 0%, #33ccff 150%);
+  background: linear-gradient(to right, #b2d3be 0%, #33ccff 150%);
 
 }
-
 
 
 h1 {
@@ -36,10 +36,6 @@ input {
     border-radius: 15px;
     letter-spacing: 2px;
     font-weight: lighter
-
-
-
-
 }
 
 .addOption {
