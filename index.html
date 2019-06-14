@@ -23,31 +23,30 @@
  $(function() {
    $('.resultSection').hide()
       var add_option = function(){
-        $('.inputs').append('<input></input>')
+        $('.inputs').append('<input type="text"></input>')
       }
       $('.addOption').click(add_option)
 
       var options = []
-      var submit = function() {
-        $('.inputSection').hide()
-        $('.resultSection').css('display', 'flex')
-        $('input').each(function(){
-
-
-          options.push($(this).val())
-
-        })
-
-        var winner = options[Math.floor(Math.random() * options.length)]
-        console.log(winner)
-        $('.resultSection').text(winner)
-        $('#rubrik').text('The Winner is!');
-        console.log(options)
+     var submit = function() {
+       $('.inputSection').hide()
+       $('.resultSection').css('display', 'flex')
+       $('input').each(function(){
+         options.push($(this).val())
+       })
+       var winner = options[Math.floor(Math.random() * options.length)]
+       console.log(winner)
+       $('.resultSection').text(winner)
+       $('#rubrik').text('The Winner is!');
+       console.log(options)
+       if ($('input').is(':empty')){
+             alert('Input can not be left blank');
       }
-      $('.submit').click(submit)
-
-
+     }
+     $('.submit').click(submit)
+     
 });
+
 $(document).ready(function(){
   $("h1").click(function(){
   $('body').toggleClass("bodycontrol");
