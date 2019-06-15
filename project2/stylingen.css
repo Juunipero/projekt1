@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+
+
+}
+button {
+  background: url("comet.png") no-repeat scroll 0 0 transparent;
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+
+
+}
+
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+        }
+  img {
+        max-width:40%;
+        height:auto;
+      }
