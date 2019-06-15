@@ -12,9 +12,10 @@ body {
 }
 
 h1 {
-  font-weight: lighter;
-  font-size: 40px;
-  letter-spacing: 2px;
+
+  font-family: 'Yatra One', cursive;
+  font-size: 60px;
+  letter-spacing: 3px;
   margin-bottom: 0px;
 }
 

@@ -3,6 +3,7 @@
   <head>
     <meta charset=utf-8>
     <link rel="stylesheet" href="./main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One&display=swap" rel="stylesheet">
     <title>Help me choose</title>
     </head>
   <body id="bodycontrol">
@@ -36,11 +37,12 @@
        })
        var winner = options[Math.floor(Math.random() * options.length)]
        console.log(winner)
-       $('.resultSection').text(winner)
+       $('.resultSection').text(winner+"!")
        $('#rubrik').text('The Winner is!');
        console.log(options)
     }
 $('.choose').click(submit)
+
 
 });
 
