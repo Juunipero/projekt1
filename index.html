@@ -9,14 +9,14 @@
       <h1 id="rubrik">Help me choose between...</h1>
 
       <div class="inputSection">
-        <img src="choc.png" height="250" width="200">
+        <img src="https://media.giphy.com/media/xUNd9DNx8mqcIBTrqM/giphy.gif" height="300" width="400">
         <div class="inputs">
-          <input placeholder="Something" ></input>
+          <input placeholder="Magic, Materia, Items" ></input>
         </div>
         <button class="addOption">Add</button>
       </div>
       <div class="resultSection"></div>
- <button class="submit">Go!</button>
+ <button class="choose">Go!</button>
 
  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
  <script>
@@ -39,12 +39,9 @@
        $('.resultSection').text(winner)
        $('#rubrik').text('The Winner is!');
        console.log(options)
-       if ($('input').is(':empty')){
-             alert('Input can not be left blank');
-      }
-     }
-     $('.submit').click(submit)
-     
+    }
+$('.choose').click(submit)
+
 });
 
 $(document).ready(function(){
